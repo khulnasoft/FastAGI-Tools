@@ -1,8 +1,3 @@
-<p align=center>
-
-<a href=”https://fastagi.co”><img src=https://fastagi.co/wp-content/uploads/2023/05/FastAGI_icon.png></a>
-</p>
-
 # FastAGI Tools
 
 Welcome to the FastAGI Tools Repository. You can contribute to this repository by adding your own custom toolkits to [FastAGI's Marketplace](https://marketplace.fastagi.khulnasot.com/) which the community can use to run your toolkits with the agents. 
