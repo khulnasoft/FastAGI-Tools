@@ -1,7 +1,7 @@
 from abc import ABC
 from typing import List
 
-from startagi.tools.base_tool import BaseToolkit, BaseTool
+from fastagi.tools.base_tool import BaseToolkit, BaseTool
 from notion_create_page import NotionCreatePageTool
 from notion_fetch_page import NotionfetchPageTool
 

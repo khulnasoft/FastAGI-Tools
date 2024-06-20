@@ -1,5 +1,5 @@
 #LIST CONTAINING LISTS OF METRICS AND DIMENSIONS API NAMES TO RUN A REPORT ON
-#copy this into STARTAGI main directory config.yaml
+#copy this into FASTAGI main directory config.yaml
 GOOGLE_ANALYTICS_VARIABLES:
   - Dimension:
       - country

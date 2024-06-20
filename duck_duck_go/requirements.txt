@@ -1,7 +1,7 @@
 duckduckgo_search
 pydantic==1.10.8
 PyYAML==6.0
-startagi-tools==1.0.6
+fastagi-tools==1.0.6
 pydantic==1.10.8
 pytest==7.4.0
 pytest-mock==3.11.1

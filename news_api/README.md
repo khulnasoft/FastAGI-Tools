@@ -1,6 +1,6 @@
-# NewsAPI Toolkit for StartAGI
+# NewsAPI Toolkit for FastAGI
 
-The NewsAPI Toolkit is a tool for StartAGI that allows you to retrieve news articles from the NewsAPI. This README provides instructions on how to set up and use the toolkit.
+The NewsAPI Toolkit is a tool for FastAGI that allows you to retrieve news articles from the NewsAPI. This README provides instructions on how to set up and use the toolkit.
 
 ## Prerequisites
 

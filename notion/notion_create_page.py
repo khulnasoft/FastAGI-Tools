@@ -3,7 +3,7 @@ import json
 
 from typing import Type, Optional
 from pydantic import BaseModel, Field
-from startagi.tools.base_tool import BaseTool
+from fastagi.tools.base_tool import BaseTool
 from helper.notion_helper import NotionHelper
 
 class NotionCreatePageSchema(BaseModel):

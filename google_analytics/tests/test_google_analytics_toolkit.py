@@ -1,7 +1,7 @@
 import unittest
 from unittest.mock import Mock
-from startagi.tools.base_tool import BaseTool, ToolConfiguration
-from startagi.tools.marketplace_tools.googleanalytics.google_analytics_toolkit import GoogleAnalyticsToolkit
+from fastagi.tools.base_tool import BaseTool, ToolConfiguration
+from fastagi.tools.marketplace_tools.googleanalytics.google_analytics_toolkit import GoogleAnalyticsToolkit
 
 class TestGoogleAnalyticsToolkit(unittest.TestCase):
     def setUp(self):

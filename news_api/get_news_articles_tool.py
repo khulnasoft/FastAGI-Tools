@@ -1,6 +1,6 @@
 from typing import Type
 from pydantic import BaseModel, Field
-from startagi.tools.base_tool import BaseTool
+from fastagi.tools.base_tool import BaseTool
 import requests
 from config import NEWSAPI_API_KEY
 

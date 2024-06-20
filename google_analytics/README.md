@@ -1,5 +1,5 @@
-# google-analytics-tool-startagi
-Google Analytics Tool for StartAGI
+# google-analytics-tool-fastagi
+Google Analytics Tool for FastAGI
 
 
 1. Create API JSON credentials from `https://developers.google.com/analytics/devguides/reporting/data/v1/quickstart-client-libraries`

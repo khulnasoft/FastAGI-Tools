@@ -1,5 +1,5 @@
 from abc import ABC
-from startagi.tools.base_tool import BaseToolkit, BaseTool
+from fastagi.tools.base_tool import BaseToolkit, BaseTool
 from typing import List
 from get_news_articles_tool import GetNewsArticlesTool
 

@@ -1,6 +1,6 @@
 from abc import ABC
 from typing import List
-from startagi.tools.base_tool import BaseTool, BaseToolkit
+from fastagi.tools.base_tool import BaseTool, BaseToolkit
 from duck_duck_go_search import DuckDuckGoSearchTool
 
 class DuckDuckGoToolkit(BaseToolkit, ABC):

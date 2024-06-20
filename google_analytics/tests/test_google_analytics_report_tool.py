@@ -2,16 +2,16 @@ import unittest
 from unittest.mock import patch, Mock, call
 from pydantic import ValidationError
 import json
-from startagi.tools.marketplace_tools.googleanalytics.google_analytics_report_tool import GoogleAnalyticsReportTool, GoogleAnalyticsReportToolInput
+from fastagi.tools.marketplace_tools.googleanalytics.google_analytics_report_tool import GoogleAnalyticsReportTool, GoogleAnalyticsReportToolInput
 from google.analytics.data_v1beta.types import RunReportRequest
 
 class TestGoogleAnalyticsReportTool(unittest.TestCase):
 
 
-    @patch("startagi.tools.marketplace_tools.googleanalytics.google_analytics_report_tool.json")
+    @patch("fastagi.tools.marketplace_tools.googleanalytics.google_analytics_report_tool.json")
     @patch("builtins.open", new_callable=unittest.mock.mock_open)
-    @patch("startagi.tools.marketplace_tools.googleanalytics.google_analytics_report_tool.os")
-    @patch("startagi.tools.marketplace_tools.googleanalytics.google_analytics_report_tool.BetaAnalyticsDataClient") 
+    @patch("fastagi.tools.marketplace_tools.googleanalytics.google_analytics_report_tool.os")
+    @patch("fastagi.tools.marketplace_tools.googleanalytics.google_analytics_report_tool.BetaAnalyticsDataClient") 
     def test_set_google_credentials(self, mock_beta_cli, mock_os, mock_open, mock_json):
         tool = GoogleAnalyticsReportTool()
         
@@ -28,7 +28,7 @@ class TestGoogleAnalyticsReportTool(unittest.TestCase):
         with self.assertRaises(ValidationError):
             GoogleAnalyticsReportToolInput()
 
-    @patch("startagi.tools.marketplace_tools.googleanalytics.google_analytics_report_tool.BetaAnalyticsDataClient")
+    @patch("fastagi.tools.marketplace_tools.googleanalytics.google_analytics_report_tool.BetaAnalyticsDataClient")
     def test_create_run_report_request(self, mock_client):
         tool = GoogleAnalyticsReportTool()
         request = tool._create_run_report_request(
@@ -75,7 +75,7 @@ class TestGoogleAnalyticsReportTool(unittest.TestCase):
         expected_filename = "dimension1metric1.txt"
         self.assertEqual(filename, expected_filename)
 
-    @patch("startagi.tools.marketplace_tools.googleanalytics.google_analytics_report_tool.yaml")
+    @patch("fastagi.tools.marketplace_tools.googleanalytics.google_analytics_report_tool.yaml")
     @patch("builtins.open")
     def test_get_dimensions_and_metrics(self, mock_open, mock_yaml):
         tool = GoogleAnalyticsReportTool()

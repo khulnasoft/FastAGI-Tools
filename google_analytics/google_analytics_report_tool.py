@@ -1,9 +1,9 @@
 import os
-from startagi.tools.base_tool import BaseTool
+from fastagi.tools.base_tool import BaseTool
 from pydantic import BaseModel, Field
 import json
 from typing import Type, Optional
-from startagi.resource_manager.file_manager import FileManager
+from fastagi.resource_manager.file_manager import FileManager
 import yaml
 from google.analytics.data_v1beta import BetaAnalyticsDataClient
 from google.analytics.data_v1beta.types import (

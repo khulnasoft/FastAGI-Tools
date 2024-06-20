@@ -1,9 +1,9 @@
 from abc import ABC
 import os
-from startagi.tools.base_tool import BaseToolkit, BaseTool, ToolConfiguration
+from fastagi.tools.base_tool import BaseToolkit, BaseTool, ToolConfiguration
 from typing import List
 from google_analytics_report_tool import GoogleAnalyticsReportTool
-from startagi.types.key_type import ToolConfigKeyType
+from fastagi.types.key_type import ToolConfigKeyType
 
 class GoogleAnalyticsToolkit(BaseToolkit, ABC):
     name: str = "Google Analytics Toolkit"
