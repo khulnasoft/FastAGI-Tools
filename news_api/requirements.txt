@@ -2,5 +2,5 @@ certifi==2024.7.4
 charset-normalizer==3.3.0
 idna==3.7
 pydantic==1.10.13
-requests==2.32.2
+requests==2.32.4
 fastagi-tools==1.0.8
